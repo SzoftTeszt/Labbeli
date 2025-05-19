@@ -1,0 +1,15 @@
+{
+    "menuItems":[
+    {"text":"Bemutatkozás", "link":"home"},
+    {"text":"Képfeltöltése", "link":"upload"},
+    {"text":"Eredmények", "link":"result"},
+    {"text":"Bejelentkezés", "link":"login"},
+    {"text":"Kijelentkezés", "link":"logout"},
+    {"text":"Súgó", "link":"help"}
+  ],
+
+  "login":{
+    "text":"Bejelentkezés"
+  }
+
+}

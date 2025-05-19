@@ -1,0 +1,14 @@
+{
+    "menuItems":[
+    {"text":"Home", "link":"home"},
+    {"text":"Upload", "link":"upload"},
+    {"text":"Result", "link":"result"},
+    {"text":"Login", "link":"login"},
+    {"text":"Logout", "link":"logout"},
+    {"text":"Help", "link":"help"}
+  ],
+
+  "login":{
+    "text":"Login"
+  }
+  }
