@@ -1,13 +1,13 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Subject } from 'rxjs';
+import { BehaviorSubject, Subject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ConfigService {
 
-  public langSub= new Subject()
+  public langSub= new BehaviorSubject<any>({})
 
   constructor(private http:HttpClient) {
     this.downloadLang("hu");

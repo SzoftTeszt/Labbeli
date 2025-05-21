@@ -14,6 +14,9 @@ import { ResultComponent } from './result/result.component';
 import { provideHttpClient } from '@angular/common/http';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { AngularFireModule } from '@angular/fire/compat';
+import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
+import { environments } from '../../environments/environments';
 
 @NgModule({
   declarations: [
@@ -30,7 +33,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    FormsModule
+    FormsModule,
+    AngularFireModule.initializeApp(environments.firebaseConfig),
+    AngularFireDatabaseModule
   ],
   providers: [provideHttpClient()],
   bootstrap: [AppComponent]

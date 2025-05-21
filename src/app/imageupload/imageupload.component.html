@@ -1,1 +1,45 @@
 <p>imageupload works!</p>
+<button (click)="add()" >Feltöltés</button>
+
+<p>
+    {{shoesImage|json}}
+</p>
+
+
+<div  class="row my-2">
+    <div class="col">
+        <input class="form-control" [(ngModel)]="ujCiponyom.datum">
+        
+    </div>
+    <div class="col">
+        <input class="form-control" [(ngModel)]="ujCiponyom.helyseg">
+    </div>
+    <div class="col">
+        <input class="form-control" [(ngModel)]="ujCiponyom.kepUrl">
+    </div>
+    <div class="col">
+        <button (click)="add()" type="button" class="btn btn-danger">Hozzáadás</button>
+    </div>
+    <div class="col">
+        
+    </div>
+</div>
+
+<div *ngFor="let ciponyom of shoesImage" class="row my-2">
+    <div class="col">
+        <input class="form-control" [(ngModel)]="ciponyom.datum">
+        
+    </div>
+    <div class="col">
+        <input class="form-control" [(ngModel)]="ciponyom.helyseg">
+    </div>
+    <div class="col">
+        <input class="form-control" [(ngModel)]="ciponyom.kepUrl">
+    </div>
+    <div class="col">
+        <button (click)="update(ciponyom)" type="button" class="btn btn-primary">Módosítás</button>
+    </div>
+    <div class="col">
+        <button (click)="delete(ciponyom)" type="button" class="btn btn-primary">Törlés</button>
+    </div>
+</div>
